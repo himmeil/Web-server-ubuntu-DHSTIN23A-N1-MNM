@@ -26,12 +26,12 @@ html, body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
-video {
+iframe {
     position: fixed;
     inset: 0;
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
+    border: 0;
     z-index: 1;
 }
 
@@ -90,9 +90,14 @@ video {
 </head>
 <body>
 
-<video id="v" autoplay muted loop playsinline>
-    <source src="video/0130.mp4" type="video/mp4">
-</video>
+<iframe
+    src="https://www.youtube.com/embed/zzs9tl31ZOs?autoplay=1&mute=1&loop=1&playlist=zzs9tl31ZOs&playsinline=1&rel=0"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+</iframe>
 
 <!-- Chữ hiển thị -->
 <div class="text-overlay">
@@ -104,14 +109,6 @@ video {
 
  <a href="index.php" class="next-btn ">NEXT →</a>
  </div>
-<script>
-// Click bất kỳ đâu để bật tiếng (giữ nguyên)
-const video = document.getElementById("v");
-document.addEventListener("click", () => {
-    video.muted = false;
-    video.volume = 1;
-}, { once: true });
-</script>
 <div class="particles"></div>
 
 </body>
