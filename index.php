@@ -540,7 +540,7 @@ if (searchInput) {
                     <div class="position-absolute bottom-0 start-0 end-0 bg-dark bg-opacity-60 text-white p-2 text-center">
                         <div class="d-flex align-items-center justify-content-center gap-2">
                             <i class="fas fa-bolt text-warning"></i>
-                            <span class="countdown text-danger fw-bold" data-end-time="2026-02-27T23:59:59">Đang tính...</span>
+                            <span class="countdown text-danger fw-bold" data-end-time="2026-12-27T23:59:59">Đang tính...</span>
                         </div>
                     </div>
                     <div class="card-body bg-white">
@@ -580,7 +580,7 @@ if (searchInput) {
                     <div class="position-absolute bottom-0 start-0 end-0 bg-dark bg-opacity-60 text-white p-2 text-center">
                         <div class="d-flex align-items-center justify-content-center gap-2">
                             <i class="fas fa-bolt text-warning"></i>
-                            <span class="countdown text-danger fw-bold" data-end-time="2026-02-23T23:59:59">Đang tính...</span>
+                            <span class="countdown text-danger fw-bold" data-end-time="2027-02-23T23:59:59">Đang tính...</span>
                         </div>
                     </div>
                     <div class="card-body bg-white">
@@ -621,7 +621,7 @@ if (searchInput) {
                     <div class="position-absolute bottom-0 start-0 end-0 bg-dark bg-opacity-60 text-white p-2 text-center">
                         <div class="d-flex align-items-center justify-content-center gap-2">
                             <i class="fas fa-bolt text-warning"></i>
-                            <span class="countdown text-danger fw-bold" data-end-time="2026-02-19T23:59:59">Đang tính...</span>
+                            <span class="countdown text-danger fw-bold" data-end-time="2027-02-19T23:59:59">Đang tính...</span>
                         </div>
                     </div>
                     <div class="card-body bg-white">
@@ -661,7 +661,7 @@ if (searchInput) {
                     <div class="position-absolute bottom-0 start-0 end-0 bg-dark bg-opacity-60 text-white p-2 text-center">
                         <div class="d-flex align-items-center justify-content-center gap-2">
                             <i class="fas fa-bolt text-warning"></i>
-                            <span class="countdown text-danger fw-bold" data-end-time="2026-02-19T23:59:59">Đang tính...</span>
+                            <span class="countdown text-danger fw-bold" data-end-time="2026-12-19T23:59:59">Đang tính...</span>
                         </div>
                     </div>
                     <div class="card-body bg-white">
@@ -706,7 +706,7 @@ if (searchInput) {
                 <div class="d-flex align-items-center justify-content-center gap-2">
                     <i class="fas fa-bolt text-warning"></i>
                     <span class="fw-bold">Flash Sale</span>
-                    <span class="countdown text-danger fw-bold" data-end-time="2026-04-10T23:59:59">Đang tính...</span>
+                    <span class="countdown text-danger fw-bold" data-end-time="2027-01-10T23:59:59">Đang tính...</span>
                 </div>
             </div>
 
@@ -750,7 +750,7 @@ if (searchInput) {
             <div class="position-absolute bottom-0 start-0 end-0 bg-dark bg-opacity-60 text-white p-2 text-center">
                 <div class="d-flex align-items-center justify-content-center gap-2">
                     <i class="fas fa-bolt text-warning"></i>
-                    <span class="countdown text-danger fw-bold" data-end-time="2026-03-20T23:59:59">Đang tính...</span>
+                    <span class="countdown text-danger fw-bold" data-end-time="2027-03-20T23:59:59">Đang tính...</span>
                 </div>
             </div>
             <div class="card-body bg-white">
@@ -791,7 +791,7 @@ if (searchInput) {
             <div class="position-absolute bottom-0 start-0 end-0 bg-dark bg-opacity-60 text-white p-2 text-center">
                 <div class="d-flex align-items-center justify-content-center gap-2">
                     <i class="fas fa-bolt text-warning"></i>
-                    <span class="countdown text-danger fw-bold" data-end-time="2026-04-25T23:59:59">Đang tính...</span>
+                    <span class="countdown text-danger fw-bold" data-end-time="2027-02-25T23:59:59">Đang tính...</span>
                 </div>
             </div>
             <div class="card-body bg-white">
@@ -887,16 +887,7 @@ if (searchInput) {
             <button class="tab-btn" id="why-tab-7" role="tab" aria-selected="false" aria-controls="tab-7" data-tab="7"><span class="why-tab-icon"><i class="fas fa-shield-alt"></i></span>An toàn trên hết</button>
             <button class="tab-btn" id="why-tab-8" role="tab" aria-selected="false" aria-controls="tab-8" data-tab="8"><span class="why-tab-icon"><i class="fas fa-comments"></i></span>Khách hàng tin chọn</button>
         </div>
-        <div class="tab-content">
-            <div class="tab-panel active" id="tab-1" role="tabpanel" aria-labelledby="why-tab-1"><div class="why-panel-grid"><div><div class="why-panel-icon"><i class="fas fa-globe-asia"></i></div><h3>Chạm vào vẻ đẹp riêng của Cà Mau</h3><p>Từ rừng tràm U Minh Hạ, Đất Mũi đến những miền biển lộng gió, mỗi hành trình mở ra một lát cắt khác nhau của Cà Mau: xanh mát, phóng khoáng và đậm tình đất phương Nam.</p></div><div class="why-points"><div class="why-point"><i class="fas fa-check-circle"></i><span>Gợi ý điểm đến tiêu biểu của Cà Mau</span></div><div class="why-point"><i class="fas fa-check-circle"></i><span>Trải nghiệm thiên nhiên và văn hóa địa phương</span></div><div class="why-point"><i class="fas fa-check-circle"></i><span>Tư vấn hành trình theo sở thích của bạn</span></div></div></div></div>
-            <div class="tab-panel" id="tab-2" role="tabpanel" aria-labelledby="why-tab-2"><div class="why-panel-grid"><div><div class="why-panel-icon"><i class="fas fa-receipt"></i></div><h3>An tâm lựa chọn với chi phí minh bạch</h3><p>Một chuyến đi trọn vẹn bắt đầu từ thông tin rõ ràng. THTravel giúp bạn nắm các hạng mục dịch vụ, mức giá và điều kiện áp dụng để chủ động cân đối ngân sách trước khi đặt tour.</p></div><div class="why-points"><div class="why-point"><i class="fas fa-check-circle"></i><span>Báo giá rõ các dịch vụ bao gồm</span></div><div class="why-point"><i class="fas fa-check-circle"></i><span>Thông tin điều kiện tour dễ theo dõi</span></div><div class="why-point"><i class="fas fa-check-circle"></i><span>Không để bạn phải đoán các khoản phí</span></div></div></div></div>
-            <div class="tab-panel" id="tab-3" role="tabpanel" aria-labelledby="why-tab-3"><div class="why-panel-grid"><div><div class="why-panel-icon"><i class="fas fa-map-signs"></i></div><h3>Lịch trình cân bằng, trải nghiệm trọn vẹn</h3><p>Hành trình khám phá Cà Mau được gợi ý theo nhịp đi hợp lý, kết nối các điểm tham quan và khoảng nghỉ cần thiết để bạn thong thả cảm nhận thiên nhiên, ẩm thực và nhịp sống địa phương.</p></div><div class="why-points"><div class="why-point"><i class="fas fa-check-circle"></i><span>Lộ trình và thời gian được bố trí khoa học</span></div><div class="why-point"><i class="fas fa-check-circle"></i><span>Cân bằng giữa trải nghiệm và thư giãn</span></div><div class="why-point"><i class="fas fa-check-circle"></i><span>Thông tin khởi hành được nêu cụ thể</span></div></div></div></div>
-            <div class="tab-panel" id="tab-4" role="tabpanel" aria-labelledby="why-tab-4"><div class="why-panel-grid"><div><div class="why-panel-icon"><i class="fas fa-user-friends"></i></div><h3>Tư vấn tận tâm, đồng hành đúng lúc</h3><p>Từ lúc chọn tour đến khi chuẩn bị khởi hành, đội ngũ THTravel sẵn sàng giải đáp thông tin, giúp bạn chuẩn bị chu đáo và an tâm hơn cho chuyến khám phá miền đất cực Nam.</p></div><div class="why-points"><div class="why-point"><i class="fas fa-check-circle"></i><span>Tư vấn theo nhu cầu thực tế</span></div><div class="why-point"><i class="fas fa-check-circle"></i><span>Hỗ trợ thông tin trước ngày khởi hành</span></div><div class="why-point"><i class="fas fa-check-circle"></i><span>Giải đáp thắc mắc trong quá trình đặt tour</span></div></div></div></div>
-            <div class="tab-panel" id="tab-5" role="tabpanel" aria-labelledby="why-tab-5"><div class="why-panel-grid"><div><div class="why-panel-icon"><i class="fas fa-award"></i></div><h3>Chỉn chu trong từng trải nghiệm</h3><p>Chúng tôi chú trọng sự rõ ràng trong thông tin, sự chu đáo trong khâu chuẩn bị và trải nghiệm liền mạch trên hành trình — để nét đẹp chân phương của Cà Mau là điều đọng lại sau chuyến đi.</p></div><div class="why-points"><div class="why-point"><i class="fas fa-check-circle"></i><span>Thông tin tour được trình bày dễ hiểu</span></div><div class="why-point"><i class="fas fa-check-circle"></i><span>Quy trình đặt tour thuận tiện</span></div><div class="why-point"><i class="fas fa-check-circle"></i><span>Lắng nghe góp ý để phục vụ tốt hơn</span></div></div></div></div>
-            <div class="tab-panel" id="tab-6" role="tabpanel" aria-labelledby="why-tab-6"><div class="why-panel-grid"><div><div class="why-panel-icon"><i class="fas fa-ticket-alt"></i></div><h3>Ưu đãi phù hợp, thêm vui cho chuyến đi</h3><p>Theo dõi các chương trình ưu đãi theo tour để tìm thêm lựa chọn phù hợp cho chuyến đi Cà Mau. Mỗi ưu đãi đều có điều kiện và thời hạn riêng được thông tin kèm theo.</p></div><div class="why-points"><div class="why-point"><i class="fas fa-check-circle"></i><span>Cập nhật ưu đãi theo từng thời điểm</span></div><div class="why-point"><i class="fas fa-check-circle"></i><span>Thông tin áp dụng đi kèm chương trình</span></div><div class="why-point"><i class="fas fa-check-circle"></i><span>Dễ dàng tìm tour đang có giá tốt</span></div></div></div></div>
-            <div class="tab-panel" id="tab-7" role="tabpanel" aria-labelledby="why-tab-7"><div class="why-panel-grid"><div><div class="why-panel-icon"><i class="fas fa-shield-alt"></i></div><h3>An tâm khám phá miền đất phương Nam</h3><p>Những vùng sông nước, rừng ngập mặn và hành trình về Đất Mũi sẽ trọn vẹn hơn khi bạn chuẩn bị kỹ. THTravel cung cấp thông tin cần thiết và tư vấn chính sách theo từng chương trình tour.</p></div><div class="why-points"><div class="why-point"><i class="fas fa-check-circle"></i><span>Nhận hướng dẫn chuẩn bị trước chuyến đi</span></div><div class="why-point"><i class="fas fa-check-circle"></i><span>Biết rõ điều kiện và chính sách của tour</span></div><div class="why-point"><i class="fas fa-check-circle"></i><span>Được hỗ trợ khi cần giải đáp thông tin</span></div></div></div></div>
-            <div class="tab-panel" id="tab-8" role="tabpanel" aria-labelledby="why-tab-8"><div class="why-panel-grid"><div><div class="why-panel-icon"><i class="fas fa-heart"></i></div><h3>Lưu giữ trải nghiệm đẹp, trân trọng niềm tin</h3><p>Mỗi chuyến đi là một câu chuyện riêng. THTravel trân trọng sự tin tưởng và những chia sẻ của bạn, để tiếp tục hoàn thiện hành trình khám phá Cà Mau theo cách gần gũi và đáng nhớ hơn.</p></div><div class="why-points"><div class="why-point"><i class="fas fa-check-circle"></i><span>Lắng nghe nhu cầu và phản hồi của bạn</span></div><div class="why-point"><i class="fas fa-check-circle"></i><span>Tư vấn lựa chọn theo mong muốn thực tế</span></div><div class="why-point"><i class="fas fa-check-circle"></i><span>Đồng hành để chuyến đi trọn vẹn hơn</span></div></div></div></div>
-        </div>
+      
     </div>
    
 </section>
@@ -1145,7 +1136,7 @@ if (searchInput) {
                     <li><a href="#" class="text-white-75">Điểm du lịch nổi bật</a></li>
                     <li><a href="#" class="text-white-75">Giới thiệu</a></li>
                     <li><a href="#" class="text-white-75">Liên hệ</a></li>
-                    <li><a href="#" class="text-white-75">Tin tức</a></li>
+                
                 </ul>
             </div>
             <!-- Cột 3: Chính sách & pháp lý -->
@@ -1214,7 +1205,7 @@ if (searchInput) {
         </div>
         <hr class="border-secondary my-4">
         <div class="text-center small text-white-50">
-            &copy; 2026 THTRAVEL. All rights reserved. | Đã đăng ký kinh doanh tại Việt Nam.
+            &copy; 2026 THTRAVEL.| PHÁT TRIỂN BỞI NHÓM 1. | PHÁT HÀNH THEO GIẤY PHÉP MIT.
         </div>
     </div>
 </footer>
