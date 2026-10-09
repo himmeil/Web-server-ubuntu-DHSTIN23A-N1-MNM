@@ -830,64 +830,91 @@ if (searchInput) {
   
   
   
-     <!-- IIIPlaceholder cho phần Điểm đến yêu thích -->
+   <!-- IIIPlaceholder cho phần Điểm đến yêu thích -->
     <div id="favorite-destinations-container"></div>
-<section class="why-choose-thtravel py-5" aria-labelledby="why-title">
-    <style>
-        .why-choose-thtravel{--why-green:#16845b;--why-ink:#17352c;--why-muted:#687a73;background:linear-gradient(180deg,#f4faf6 0%,#fff 100%)}
-        .why-choose-thtravel .why-shell{max-width:1120px;margin:auto}
-        .why-choose-thtravel .why-eyebrow{color:var(--why-green);font-size:.78rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
-        .why-choose-thtravel .section-title{max-width:700px;margin:8px auto 12px;color:var(--why-ink);font-size:clamp(2rem,4vw,3rem);font-weight:800;letter-spacing:-.04em;text-align:center}
-        .why-choose-thtravel .why-intro{max-width:650px;margin:0 auto;color:var(--why-muted);text-align:center;line-height:1.75}
-        .why-choose-thtravel .camau-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:30px auto 8px;max-width:1000px}
-        .why-choose-thtravel .camau-photo{position:relative;min-height:155px;overflow:hidden;border-radius:17px;background:#dcebe2;box-shadow:0 8px 22px rgba(24,63,44,.09)}
-        .why-choose-thtravel .camau-photo img{width:100%;height:175px;object-fit:cover;display:block;transition:transform .45s ease}
-        .why-choose-thtravel .camau-photo:hover img{transform:scale(1.05)}
-        .why-choose-thtravel .camau-photo::after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(9,34,25,.72))}
-        .why-choose-thtravel .camau-photo figcaption{position:absolute;z-index:1;bottom:13px;left:14px;color:#fff;font-size:.9rem;font-weight:750}
-        .why-choose-thtravel .tabs{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px!important;margin:34px auto 18px;max-width:1000px}
-        .why-choose-thtravel .tab-btn{display:flex;align-items:center;gap:10px;min-height:58px;padding:12px 14px;border:1px solid #e1ebe5;border-radius:14px;background:#fff;color:#42574d;font-size:.9rem;font-weight:700;text-align:left;transition:all .2s ease}
-        .why-choose-thtravel .tab-btn .why-tab-icon{display:grid;place-items:center;width:34px;height:34px;flex:0 0 34px;border-radius:10px;background:#edf7f1;color:var(--why-green)}
-        .why-choose-thtravel .tab-btn:hover,.why-choose-thtravel .tab-btn.active{border-color:var(--why-green);background:var(--why-green);color:#fff;box-shadow:0 8px 20px rgba(22,132,91,.16);transform:translateY(-1px)}
-        .why-choose-thtravel .tab-btn:hover .why-tab-icon,.why-choose-thtravel .tab-btn.active .why-tab-icon{background:rgba(255,255,255,.16);color:#fff}
-        .why-choose-thtravel .tab-content{max-width:1000px;margin:auto;padding:clamp(22px,4vw,42px);border:1px solid #e6eee8;border-radius:24px;background:#fff;box-shadow:0 18px 50px rgba(24,63,44,.07)}
-        .why-choose-thtravel .tab-panel{display:none;animation:whyFade .28s ease}
-        .why-choose-thtravel .tab-panel.active{display:block}
-        .why-choose-thtravel .why-panel-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(220px,.8fr);gap:32px;align-items:center}
-        .why-choose-thtravel .why-panel-icon{display:grid;place-items:center;width:58px;height:58px;margin-bottom:18px;border-radius:18px;background:#eaf6ef;color:var(--why-green);font-size:1.5rem}
-        .why-choose-thtravel .tab-panel h3{margin:0 0 12px;color:var(--why-ink);font-size:clamp(1.35rem,2.5vw,1.8rem);font-weight:800;letter-spacing:-.025em}
-        .why-choose-thtravel .tab-panel p{margin:0;color:var(--why-muted);line-height:1.8}
-        .why-choose-thtravel .why-points{display:grid;gap:12px;padding:20px;border-radius:18px;background:#f5faf6}
-        .why-choose-thtravel .why-point{display:flex;align-items:flex-start;gap:11px;color:#354a40;font-size:.93rem;line-height:1.55}
-        .why-choose-thtravel .why-point i{margin-top:3px;color:var(--why-green)}
-        @keyframes whyFade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
-        @media(max-width:767.98px){.why-choose-thtravel .camau-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.why-choose-thtravel .camau-photo img{height:145px}.why-choose-thtravel .tabs{grid-template-columns:repeat(2,minmax(0,1fr))}.why-choose-thtravel .tab-btn{font-size:.82rem;padding:9px;gap:7px}.why-choose-thtravel .tab-btn .why-tab-icon{width:30px;height:30px;flex-basis:30px}.why-choose-thtravel .why-panel-grid{grid-template-columns:1fr;gap:22px}}
-        @media(max-width:380px){.why-choose-thtravel .tabs{grid-template-columns:1fr}}
-        @media(prefers-reduced-motion:reduce){.why-choose-thtravel *, .why-choose-thtravel *::before,.why-choose-thtravel *::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
-    </style>
-    <div class="container why-shell">
-        <div class="text-center">
-            <div class="why-eyebrow">Hành trình an tâm, trải nghiệm trọn vẹn</div>
-            <h2 id="why-title" class="section-title">Vì sao du khách chọn <span style="color:#16845b">THTravel</span>?</h2>
-            <p class="why-intro">Từ rừng tràm U Minh Hạ đến Đất Mũi nơi cuối trời Tổ quốc, THTravel đưa bạn chạm vào vẻ đẹp mộc mạc, hào sảng và giàu sức sống của Cà Mau — với hành trình được chăm chút từ lúc khởi hành đến khi trở về.</p>
-        </div>
-        <div class="camau-gallery" aria-label="Khám phá cảnh đẹp Cà Mau">
-            <figure class="camau-photo mb-0"><img src="assets/camau/u-minh-ha.jpg" alt="Rừng tràm và dòng kênh xanh ở U Minh Hạ" loading="lazy"><figcaption>Rừng U Minh Hạ</figcaption></figure>
-            <figure class="camau-photo mb-0"><img src="assets/camau/dat-mui.jpg" alt="Thiên nhiên vùng Đất Mũi Cà Mau" loading="lazy"><figcaption>Đất Mũi Cà Mau</figcaption></figure>
-            <figure class="camau-photo mb-0"><img src="assets/camau/camau-xanh.jpg" alt="Không gian xanh miền đất cực Nam" loading="lazy"><figcaption>Miền xanh cực Nam</figcaption></figure>
-            <figure class="camau-photo mb-0"><img src="assets/camau/dien-gio.jpg" alt="Cánh đồng điện gió bên biển miền Tây" loading="lazy"><figcaption>Gió biển phương Nam</figcaption></figure>
-        </div>
-        <div class="tabs" role="tablist" aria-label="Lợi ích khi chọn THTravel">
-            <button class="tab-btn active" id="why-tab-1" role="tab" aria-selected="true" aria-controls="tab-1" data-tab="1"><span class="why-tab-icon"><i class="fas fa-map-marked-alt"></i></span>Tour đa dạng</button>
-            <button class="tab-btn" id="why-tab-2" role="tab" aria-selected="false" aria-controls="tab-2" data-tab="2"><span class="why-tab-icon"><i class="fas fa-tags"></i></span>Giá minh bạch</button>
-            <button class="tab-btn" id="why-tab-3" role="tab" aria-selected="false" aria-controls="tab-3" data-tab="3"><span class="why-tab-icon"><i class="fas fa-route"></i></span>Lịch trình tối ưu</button>
-            <button class="tab-btn" id="why-tab-4" role="tab" aria-selected="false" aria-controls="tab-4" data-tab="4"><span class="why-tab-icon"><i class="fas fa-headset"></i></span>Hỗ trợ tận tâm</button>
-            <button class="tab-btn" id="why-tab-5" role="tab" aria-selected="false" aria-controls="tab-5" data-tab="5"><span class="why-tab-icon"><i class="fas fa-star"></i></span>Chất lượng chuẩn</button>
-            <button class="tab-btn" id="why-tab-6" role="tab" aria-selected="false" aria-controls="tab-6" data-tab="6"><span class="why-tab-icon"><i class="fas fa-gift"></i></span>Ưu đãi hấp dẫn</button>
-            <button class="tab-btn" id="why-tab-7" role="tab" aria-selected="false" aria-controls="tab-7" data-tab="7"><span class="why-tab-icon"><i class="fas fa-shield-alt"></i></span>An toàn trên hết</button>
-            <button class="tab-btn" id="why-tab-8" role="tab" aria-selected="false" aria-controls="tab-8" data-tab="8"><span class="why-tab-icon"><i class="fas fa-comments"></i></span>Khách hàng tin chọn</button>
-        </div>
+<section class="why-choose-thtravel py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title">Tại sao chọn <span>THTravel</span>?</h2>
       
+        <!-- Tabs navigation -->
+        <div class="tabs d-flex flex-wrap justify-content-center gap-2 mb-4">
+            <button class="tab-btn active" data-tab="1">1. Tour đa dạng</button>
+            <button class="tab-btn" data-tab="2">2. Giá cả hợp lý</button>
+            <button class="tab-btn" data-tab="3">3. Lịch trình tối ưu</button>
+            <button class="tab-btn" data-tab="4">4. Dịch vụ chuyên nghiệp</button>
+            <button class="tab-btn" data-tab="5">5. Chất lượng chuẩn mực</button>
+            <button class="tab-btn" data-tab="6">6. Ngập tràn ưu đãi</button>
+            <button class="tab-btn" data-tab="7">7. An toàn trên hết</button>
+            <button class="tab-btn" data-tab="8">8. Uy tín từ khách hàng</button>
+        </div>
+        <!-- Tab contents -->
+        <div class="tab-content">
+            <!-- Tab 1: Tour đa dạng -->
+            <div class="tab-panel active" id="tab-1">
+                <div class="tab-images row g-3 justify-content-center mb-4">
+                    <div class="col-md-4"><img src="https://strapi-imaginary.weroad.it/resource/medium/232947/weroad-group-trip-women-conical-hats-lake.jpg" class="img-fluid rounded shadow" alt="Nhóm du lịch Vịnh Hạ Long"></div>
+                    <div class="col-md-4"><img src="https://cdn.prod.website-files.com/56e9debf633486e330198479/687296abdcbecd54d7331be0_trang-an-vietnam.jpg" class="img-fluid rounded shadow" alt="Du lịch nhóm Tràng An"></div>
+                    <div class="col-md-4"><img src="https://indochinatodaytravel.com/wp-content/uploads/2025/05/vietnam-8-day-itinerary-a-perfect-journey-from-north-to-south-5.png" class="img-fluid rounded shadow" alt="Hành trình Bắc-Nam đa dạng"></div>
+                </div>
+                <h3>Tour đa dạng – Điểm đến không giới hạn</h3>
+                <p>Tại THTravel, chúng tôi hiểu rằng mỗi du khách là một cá tính riêng biệt. Vì vậy, hệ thống tour được thiết kế vô cùng phong phú: từ những dải cát trắng mịn của du lịch nghỉ dưỡng, những cung đường trekking đầy thử thách cho người thích khám phá, đến những hành trình di sản đậm chất văn hóa. Dù là trong nước</p>
+            </div>
+            <!-- Tab 2: Giá cả hợp lý -->
+            <div class="tab-panel" id="tab-2">
+                <div class="tab-images row g-3 justify-content-center mb-4">
+                    <div class="col-md-4"><img src="https://www.bigworldsmallpockets.com/wp-content/uploads/2020/08/How-Much-Does-It-Cost-to-Travel-in-Vietnam.jpg" class="img-fluid rounded shadow" alt="Du lịch tiết kiệm Việt Nam"></div>
+                    <div class="col-md-4"><img src="https://cdn-ileghnj.nitrocdn.com/PjaofSAhzHXqHTtuhkpijjCmmMFyRZdh/assets/images/optimized/rev-1068d74/gomayu.com/wp-content/uploads/2025/05/How-to-travel-vietnam-on-Budget.jpg" class="img-fluid rounded shadow" alt="Mẹo tiết kiệm khi du lịch Việt Nam"></div>
+                    <div class="col-md-4"><img src="https://indochinatodaytravel.com/wp-content/uploads/2025/05/vietnam-8-day-itinerary-a-perfect-journey-from-north-to-south-5.png" class="img-fluid rounded shadow" alt="Hành trình Bắc-Nam đa dạng"></div>
+                </div>
+                <h3>Giá cả hợp lý – Minh bạch tuyệt đối</h3>
+                <p>Chúng tôi cam kết mang lại giá trị tương xứng với từng chi phí bạn bỏ ra. Mọi khoản mục đều được công khai rõ ràng ngay từ khâu tư vấn. Với THTravel, "chi phí ẩn" là khái niệm không tồn tại. Chúng tôi tối ưu hóa quy trình để mang đến mức giá cạnh tranh nhất, phù hợp với ngân sách của nhiều đối tượng khách hàng từ bình dân đến cao cấp.</p>
+            </div>
+            <!-- Tab 3: Lịch trình tối ưu -->
+            <div class="tab-panel" id="tab-3">
+                <div class="tab-images row g-3 justify-content-center mb-4">
+                    <div class="col-md-4"><img src="https://www.bigworldsmallpockets.com/wp-content/uploads/2020/08/How-Much-Does-It-Cost-to-Travel-in-Vietnam.jpg" class="img-fluid rounded shadow" alt="Du lịch tiết kiệm Việt Nam"></div>
+                    <div class="col-md-4"><img src="https://cdn-ileghnj.nitrocdn.com/PjaofSAhzHXqHTtuhkpijjCmmMFyRZdh/assets/images/optimized/rev-1068d74/gomayu.com/wp-content/uploads/2025/05/How-to-travel-vietnam-on-Budget.jpg" class="img-fluid rounded shadow" alt="Mẹo tiết kiệm khi du lịch Việt Nam"></div>
+                    <div class="col-md-4"><img src="https://indochinatodaytravel.com/wp-content/uploads/2025/05/vietnam-8-day-itinerary-a-perfect-journey-from-north-to-south-5.png" class="img-fluid rounded shadow" alt="Hành trình Bắc-Nam đa dạng"></div>
+                </div>
+                <h3>Lịch trình tối ưu – Thiết kế khoa học</h3>
+                <p>Thời gian của bạn là vàng bạc. Do đó, đội ngũ điều hành của chúng tôi luôn nghiên cứu kỹ lưỡng để thiết kế những lịch trình thông minh nhất. Chúng tôi hạn chế tối đa thời gian di chuyển chết, giúp bạn có thêm thời gian để tận hưởng, chụp ảnh và trải nghiệm nhưng vẫn đảm bảo không bỏ sót bất kỳ điểm check-in nổi bật.</p>
+            </div>
+            <!-- Tab 4: Dịch vụ chuyên nghiệp -->
+            <div class="tab-panel" id="tab-4">
+                <div class="tab-images row g-3 justify-content-center mb-4">
+                    <div class="col-md-4"><img src="https://www.bigworldsmallpockets.com/wp-content/uploads/2020/08/How-Much-Does-It-Cost-to-Travel-in-Vietnam.jpg" class="img-fluid rounded shadow" alt="Du lịch tiết kiệm Việt Nam"></div>
+                    <div class="col-md-4"><img src="https://cdn-ileghnj.nitrocdn.com/PjaofSAhzHXqHTtuhkpijjCmmMFyRZdh/assets/images/optimized/rev-1068d74/gomayu.com/wp-content/uploads/2025/05/How-to-travel-vietnam-on-Budget.jpg" class="img-fluid rounded shadow" alt="Mẹo tiết kiệm khi du lịch Việt Nam"></div>
+                    <div class="col-md-4"><img src="https://indochinatodaytravel.com/wp-content/uploads/2025/05/vietnam-8-day-itinerary-a-perfect-journey-from-north-to-south-5.png" class="img-fluid rounded shadow" alt="Hành trình Bắc-Nam đa dạng"></div>
+                </div>
+                <h3>Dịch vụ chuyên nghiệp – Tận tâm 24/7</h3>
+                <p>Sự hài lòng của khách hàng là kim chỉ nam cho mọi hoạt động. Đội ngũ tư vấn viên của THTravel không chỉ bán tour, họ là những chuyên gia tâm lý luôn lắng nghe nhu cầu của bạn. Đồng hành cùng bạn trên mỗi chuyến đi là đội ngũ hướng dẫn viên dày dặn kinh nghiệm, am hiểu kiến thức và luôn sẵn lòng hỗ trợ khách hàng bất kể ngày đêm.</p>
+            </div>
+            <!-- Các tab còn lại tương tự, thêm ảnh phù hợp -->
+            <!-- Tab 5 -->
+            <div class="tab-panel" id="tab-5">
+                <div class="tab-images row g-3 justify-content-center mb-4">
+                    <div class="col-md-4"><img src="https://www.bigworldsmallpockets.com/wp-content/uploads/2020/08/How-Much-Does-It-Cost-to-Travel-in-Vietnam.jpg" class="img-fluid rounded shadow" alt="Du lịch tiết kiệm Việt Nam"></div>
+                    <div class="col-md-4"><img src="https://cdn-ileghnj.nitrocdn.com/PjaofSAhzHXqHTtuhkpijjCmmMFyRZdh/assets/images/optimized/rev-1068d74/gomayu.com/wp-content/uploads/2025/05/How-to-travel-vietnam-on-Budget.jpg" class="img-fluid rounded shadow" alt="Mẹo tiết kiệm khi du lịch Việt Nam"></div>
+                    <div class="col-md-4"><img src="https://indochinatodaytravel.com/wp-content/uploads/2025/05/vietnam-8-day-itinerary-a-perfect-journey-from-north-to-south-5.png" class="img-fluid rounded shadow" alt="Hành trình Bắc-Nam đa dạng"></div>
+                </div>
+                <h3>Chất lượng dịch vụ chuẩn mực</h3>
+                <p>Chất lượng chuẩn mực của THTRAVEL được xây dựng trên nền tảng uy tín, chuyên nghiệp và tận tâm trong từng hành trình. Chúng tôi cam kết mang đến cho khách hàng những trải nghiệm du lịch an toàn, tiện nghi và đáng nhớ thông qua dịch vụ được chuẩn hóa từ khâu tư vấn, tổ chức đến chăm sóc khách hàng.</p> <!-- giữ nguyên nội dung của bạn -->
+            </div>
+            <!-- Tab 6,7,8: Bạn có thể thêm ảnh tương tự từ kết quả trên, ví dụ dùng ảnh bảo hiểm từ tab 7, ưu đãi từ tab 6, review từ tab 8 -->
+            <!-- Ví dụ cho Tab 7 -->
+            <div class="tab-panel" id="tab-7">
+                <div class="tab-images row g-3 justify-content-center mb-4">
+                    <div class="col-md-4"><img src="https://www.bigworldsmallpockets.com/wp-content/uploads/2020/08/How-Much-Does-It-Cost-to-Travel-in-Vietnam.jpg" class="img-fluid rounded shadow" alt="Du lịch tiết kiệm Việt Nam"></div>
+                    <div class="col-md-4"><img src="https://cdn-ileghnj.nitrocdn.com/PjaofSAhzHXqHTtuhkpijjCmmMFyRZdh/assets/images/optimized/rev-1068d74/gomayu.com/wp-content/uploads/2025/05/How-to-travel-vietnam-on-Budget.jpg" class="img-fluid rounded shadow" alt="Mẹo tiết kiệm khi du lịch Việt Nam"></div>
+                    <div class="col-md-4"><img src="https://indochinatodaytravel.com/wp-content/uploads/2025/05/vietnam-8-day-itinerary-a-perfect-journey-from-north-to-south-5.png" class="img-fluid rounded shadow" alt="Hành trình Bắc-Nam đa dạng"></div>
+                <h3>An toàn là trên hết – Bảo hiểm toàn diện</h3>
+                <p>An toàn là trên hết – Bảo hiểm toàn diện, THTRAVEL luôn đặt sự an tâm của khách hàng làm ưu tiên hàng đầu trong mọi chuyến đi. Tất cả tour đều được trang bị bảo hiểm du lịch đầy đủ, đảm bảo quyền lợi tối đa trước các rủi ro phát sinh, giúp khách hàng tận hưởng hành trình một cách trọn vẹn và không lo lắng.</p>
+            </div>
+            <!-- Tương tự cho tab 6 & 8 -->
+        </div>
+        <div class="text-center" style="margin-top: 50px; margin-bottom: 10px;">
+          
+        </div>
     </div>
    
 </section>
@@ -1136,7 +1163,7 @@ if (searchInput) {
                     <li><a href="#" class="text-white-75">Điểm du lịch nổi bật</a></li>
                     <li><a href="#" class="text-white-75">Giới thiệu</a></li>
                     <li><a href="#" class="text-white-75">Liên hệ</a></li>
-                
+                    <li><a href="#" class="text-white-75">Tin tức</a></li>
                 </ul>
             </div>
             <!-- Cột 3: Chính sách & pháp lý -->
@@ -1205,7 +1232,7 @@ if (searchInput) {
         </div>
         <hr class="border-secondary my-4">
         <div class="text-center small text-white-50">
-            &copy; 2026 THTRAVEL.| PHÁT TRIỂN BỞI NHÓM 1. | PHÁT HÀNH THEO GIẤY PHÉP MIT.
+            &copy; 2026 THTRAVEL. All rights reserved. | Đã đăng ký kinh doanh tại Việt Nam.
         </div>
     </div>
 </footer>
