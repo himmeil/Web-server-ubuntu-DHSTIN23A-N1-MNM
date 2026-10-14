@@ -141,12 +141,15 @@ $user = $_SESSION['user'] ?? null;
 </nav>
     <!-- Hero with Video Background -->
     <section class="hero">
-        <video class="video-bg" autoplay muted loop playsinline>
-            <source src="video/hi.mp4" type="video/mp4">
-            <!-- Video dự phòng nếu link trên không chạy -->
-            <source src="https://assets.mixkit.co/videos/preview/12345/12345-large.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <iframe 
+            class="video-bg" 
+            src="https://www.youtube.com/embed/FYZEHm0cy7U?autoplay=1&mute=1&controls=0&loop=1&playlist=FYZEHm0cy7U&modestbranding=1&rel=0&playsinline=1" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
         <div class="video-overlay"></div>
         <div class="container h-100 d-flex align-items-center position-relative">
             <div class="row w-100">
