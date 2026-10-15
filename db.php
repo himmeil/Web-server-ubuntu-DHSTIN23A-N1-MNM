@@ -42,7 +42,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 $host     = $_ENV['DB_HOST'] ?? 'localhost';
 $dbname   = $_ENV['DB_NAME'] ?? 'thtravel_db';
 $username = $_ENV['DB_USER'] ?? 'root';
-$password = $_ENV['DB_PASS'] ?? '';
+$password = $_ENV['DB_PASS'] ?? 'Dhstin23A';
 
 // 4. Khởi tạo kết nối CSDL
 try {
